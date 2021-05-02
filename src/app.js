@@ -7,11 +7,9 @@ const expressLoad = require('express-load');
 app.use(morgan(':method | :status | HTTP :http-version | Resposta: :response-time ms | Data: :date[web] | URL: :url'));
 app.use(require('./middlewares/cors.middleware'));
 
-// expressLoad('controllers')
-//     .into(app);
-app.get("/ping", (req, res, next) => {
-    return res.status(200).send({});
-})
+expressLoad('./src/controllers')
+    .into(app);
+
 app.listen(config.portApi, () => {
     console.log(`[Magalu] - Ativo :D | ${config.urlApi}:${config.portApi}`);
 });

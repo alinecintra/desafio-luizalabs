@@ -1,5 +1,5 @@
 module.exports = (app) => {
     app.get("/ping", (req, res, next) => {
-        return res.status(200).send({});
+        return res.send({status: "Aline"});
     })
 }
