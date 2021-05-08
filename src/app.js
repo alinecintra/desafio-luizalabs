@@ -6,6 +6,7 @@ const expressLoad = require('express-load');
 
 app.use(morgan(':method | :status | HTTP :http-version | Resposta: :response-time ms | Data: :date[web] | URL: :url'));
 app.use(require('./middlewares/cors.middleware'));
+app.use(express.json());
 
 expressLoad('./src/controllers')
     .into(app);
