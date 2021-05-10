@@ -5,4 +5,8 @@ module.exports = (app) => {
         const products = await magaluApi.getProducts()
         return res.send(products);
     })
+
 }
+
+
+

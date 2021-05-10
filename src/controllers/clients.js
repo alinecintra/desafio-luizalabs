@@ -27,8 +27,5 @@ module.exports = (app) => {
         const clients = await clientsDb.deleteClients(req.params.id)
         return res.send(clients);
     })
-
-    
-    
 }
 
