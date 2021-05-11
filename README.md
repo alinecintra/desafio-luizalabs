@@ -1,4 +1,31 @@
 # Desafio Magalu
+## Requisitos ##
+Node https://nodejs.org/en/  
+Yarn (Opcional) https://yarnpkg.com/pt-BR/  
+
+## Instalação ##
+Após clonar o repositório, utilize o comando via terminal  
+`npm install` ou `yarn` para baixar os pacotes de dependências.  
+
+
+API
+
+Utilizando o comando `yarn dev` a aplicação rodará no seguinte endereço:
+`http://localhost:4500/`
+
+*Observação: caso queira importar via postman os métodos disponíveis são:
+
+curl --location --request GET 'http://localhost:4500/products'
+
+curl --location --request GET 'http://localhost:4500/clients'
+
+curl --location --request GET 'http://localhost:4500/clients/3'
+
+curl --location --request POST 'http://localhost:4500/clients'
+
+curl --location --request PUT 'http://localhost:4500/clients/1'
+
+curl --location --request DELETE 'http://localhost:4500/clients/1'
 
 ## Cenário
 O Magalu está expandindo seus negócios e uma das novas missões do time de
@@ -35,3 +62,5 @@ simular essa renderização (foque no desenvolvimento da API).
 
 ● O acesso à api deve ser aberto ao mundo, porém deve possuir autenticação
 e autorização.
+
+
