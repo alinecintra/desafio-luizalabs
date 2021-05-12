@@ -20,7 +20,7 @@ async function insertClients(client){
 
 async function updateClients(id, client) {
     const conn = await connect();
-    const [rows] = await conn.query('UPDATE client set ? WHERE id=?;',[id, client]);
+    const [rows] = await conn.query('UPDATE client set ? WHERE id=?;', [client, id]);
     return rows;
 }
 
